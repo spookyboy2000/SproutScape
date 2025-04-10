@@ -10,6 +10,7 @@ public class SproutScapeTarget : TargetRules
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 
-		ExtraModuleNames.AddRange( new string[] { "SproutScape" } );
-	}
+        ExtraModuleNames.Add("SproutScape");
+        //ExtraModuleNames.AddRange( new string[] { "SproutScape" } );
+    }
 }

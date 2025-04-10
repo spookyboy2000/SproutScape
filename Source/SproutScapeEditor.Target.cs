@@ -10,6 +10,7 @@ public class SproutScapeEditorTarget : TargetRules
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 
-		ExtraModuleNames.AddRange( new string[] { "SproutScape" } );
+		ExtraModuleNames.Add("SproutScape");
+		//ExtraModuleNames.AddRange( new string[] { "SproutScape" } );
 	}
 }
