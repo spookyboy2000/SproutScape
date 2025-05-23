@@ -15,14 +15,16 @@ Bas Klachid:
   * Roomba(lvl 1)
   * Animation Blend spaces for 3D
   * animation flip book for 2D
-  * logic of animations
+  * logic of animation for 3D
+  * logic of animation for 2D
   * Audio slider
 
 Edgar Rikkert:
   * Blueprint Interface for interaction
   * Centerpoint Camera
   * Washbot(lvl 1)
-  * items to Interact
+  * Interactable object
+  * interactable object to hold
 
 Nick van Luyk:
   * Local Co-op
@@ -38,6 +40,24 @@ When the Roomba is activated by the appointed interactive actor, it initiates it
 
 ![GIF](Github-Media/Roomba.gif)
 
+
+## Animation Blend spaces for 3D made by Bas Klachid
+
+![pic]()
+
+## animation flip book for 2D made by Bas Klachid
+
+![pic]()
+
+## logic of animation for 3D made by Bas Klachid
+
+![pic]()
+
+## logic of animation for 2D made by Bas Klachid
+
+![pic]()
+
+
 ## audio slider made by Bas Klachid
 
 we used a widget blueprint and give the slider a value ammount that would be adjusted to the volume itself. This made it so that we can adjùst the volume either in the main menu or in our pause menu.
@@ -52,15 +72,13 @@ start((Player adjusts volume slider)) --> |the slider value changes between 0 - 
 Mixer(update audio mixer with new volume) --> |applies the changes to the game audio output| updateUI{Reflect Changes in UI & Save Settings}
 ```
 
-## Animation Blend spaces for 3D made by Bas Klachid
-
-The Animation Blend Space works by seamlessly transitioning between two animations, creating a smooth Transition from one state to another. This feature is a valuable addition to character animation, as it eliminates much of the hassle involved in manual transitions. It ensures that animations look clean and fluid, preventing them from appearing rigid or unnatural.
-
 ## Centerpoint Camera by Edgar Rikkert
 
 The Center-point camera  dynamically adjusts its position based on the locations of both players. The idea is to keep both players visible on the screen while maintaining a balanced view of the action.If the players move closer together, the camera can zoom in for a more detailed view. Conversely, if they spread apart, the camera zooms out to keep both in frame. The zoom level is often determined by the distance between the players. by letting this be funtion be fired on the Event Tick it ensures that the camera stays centered relative to both players.
 
 ![GIF](Github-Media/CenterpointCamera.gif)
+
+
 
 ### flowchart for the Centerpoint Camera
 ```mermaid
@@ -98,11 +116,15 @@ executeEvent(Blueprint executes event logic) --> eventcomplete{event completes a
 
 ```
 
-## items to Interact made by Edgar Rikkert
+## Interactable object to hold made by Edgar Rikkert
 
-the items to interact are made to highlight if a pawn gets into range of the collider. while it is highlighted the player can use the appropriate interaction, either having to hold the key down or simply having to press it once. after it is activated the hold to interact actor will light up red and be flipped to the other side to indicate that it has been activated. 
+The items to interact are made to highlight if a pawn gets into range of the collider. while it is highlighted the player can use the appropriate interaction, either having to hold the key down or simply having to press it once. After it is activated the hold to interact actor will light up red and be flipped to the other side to indicate that it has been activated.
 
 ![pic](Github-Media/HoldToInteract.gif)
+
+## Interactable object made by Edgar Rikkert
+
+The Interactable object is made to highlight if a pawn gets into range of the collider. The normal interactable object works a bit different then the interactable object to hold. Simply Pressing it once will fire off the event for the actor that has the blueprint interface.
 
 ## Button to press by Nick van Luyk
 
