@@ -78,18 +78,28 @@ cordcam(get camera actor location) --> |set as target| setactor{Set camera locat
 ```
 ## the washbot made by Edgar Rikkert
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+if the button ontop the package box is pressed by the 3D player, the actor will finish it's animation in the paperFlipbook. After that the collider by the plate will appear which makes it so that the 2D player can move further throughout the level
 
-![pic](Github-Media/image (1).png)
+![pic](Github-Media/Washbot.png)
 
 ## Blueprint Interface for interaction made by Edgar Rikkert
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-![example](https://user-images.githubusercontent.com/1262745/189135129-34d15823-0311-46b5-a041-f0bbfede9e78.png)
+A Blueprint Interface is a convenient way to instansiate communication between different Blueprints without relying on hard references. This means that each Blueprint implementing the interface must define its own functions. For example, the InteractionHold function takes a float input that determines how long the interaction key is held, allowing the loading bar to update dynamically based on the duration of the press.
+
+```mermaid
+flowchart TD
+
+start((player presses button)) -->|button calls interface function| BPCheck(check if blueprint implements Interface)
+BPCheck(check if blueprint implements Interface) -->|yes| executeEvent(Blueprint executes event logic)
+BPCheck(check if blueprint implements Interface) -->|no| stop{no action taken}
+executeEvent(Blueprint executes event logic) --> eventcomplete{event completes and updates game state}
+
+```
 
 ## items to Interact made by Edgar Rikkert
 
 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
 ![example](https://user-images.githubusercontent.com/1262745/189135129-34d15823-0311-46b5-a041-f0bbfede9e78.png)
 
 ## Button to press by Nick van Luyk
