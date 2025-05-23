@@ -13,6 +13,7 @@ A complete and detailed description can be found in the functional design.(part 
 
 Bas Klaichid:
   * Roomba(lvl 1)
+  * 3D Movement
   * animation flip book for 2D
   * logic of animation for 3D
   * logic of animation for 2D
@@ -55,6 +56,9 @@ This is the working logic for the 3D animation so that when the player jumps, ru
 This is the working logic for the 2D animation so that when the player jumps, runs, falls, and stand still the proper animation is played without wierd visual glitches and to make sure the sprite is able to move both ways.
 ![pic](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/2Dbot.png)
 
+## 3D Movement
+I made the 3D movement 
+![GIF](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/Roomba.gif)
 
 ## audio slider made by Bas Klaichid
 
