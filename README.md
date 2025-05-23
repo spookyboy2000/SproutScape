@@ -33,11 +33,15 @@ Nick van Luyk:
 ## Roomba puzzle made by Bas Klachid
 
 When the Roomba is activated by the appointed interactive actor, it initiates its timeline, moving toward a designated point before returning to its original location. As it follows its path, the Roomba's collider checks for objects in front of it. When it collides with paper wads, its collider gradually shrinks them down, reducing their size until they disappear entirely. Once the Roomba finishes its path, the collider that stops the 3D player is destroyed, allowing them to continue playing the level.
-![example](Github-Media/Roomba.gif)
+
+![GIF](Github-Media/Roomba.gif)
 
 ## audio slider made by Bas Klachid
 
-we used a widget blueprint and give the slider a value ammount that would be adjusted to the volume itself. This made it so that we can adjsut the volume either in the main menu or in our pause menu.
+we used a widget blueprint and give the slider a value ammount that would be adjusted to the volume itself. This made it so that we can adjùst the volume either in the main menu or in our pause menu.
+
+
+![pic](Github-Media/image.png)
 
 ```mermaid
 flowchart TD
@@ -76,7 +80,7 @@ cordcam(get camera actor location) --> |set as target| setactor{Set camera locat
 
 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
-![example](https://user-images.githubusercontent.com/1262745/189135129-34d15823-0311-46b5-a041-f0bbfede9e78.png)
+![pic](Github-Media/image (1).png)
 
 ## Blueprint Interface for interaction made by Edgar Rikkert
 
