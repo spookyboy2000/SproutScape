@@ -1,4 +1,4 @@
-# VoorbeeldExamenRepo
+# ExamenRepository
 Een voorbeeld repository voor het examenwerk
 
 In deze repository vind je de informatie over het examen project.
@@ -10,7 +10,7 @@ Linx Interactive is a company founded by Edwin van Gessel. The goal of Linx is t
 
 The assignment is to create a local multiplayer game that centers on teamwork and positive emotions like friendship and pride. Players must support each other to progress—whether by reviving, healing, or solving puzzles together. Winning isn’t the focus; instead, the game is all about cooperation and mutual encouragement. Both players must always collaborate to move forward, fostering a strong sense of connection. To reinforce this, the game should reward their teamwork with positive feedback, making them feel proud of their shared achievements. Ultimately, the experience should emphasize connection, friendship, and the joy of building meaningful relationships.
 
-Een complete en uitgebreide beschrijving komt in het functioneel ontwerp (onderdeel van de [wiki](https://github.com/spookyboy2000/SproutScape/wiki))
+A complete and detailed description can be found in the functional design.(part of the [wiki](https://github.com/spookyboy2000/SproutScape/wiki))
 
 # Geproduceerde Game Onderdelen
 
@@ -23,6 +23,7 @@ Bas Klachid:
   * Roomba(lvl 1)
   * Animation Blend spaces for 2D and 3D
   * Collision for lvl 2
+
 Edgar Rikkert:
   * Blueprint Interface for interaction
   * Centerpoint Camera
@@ -59,13 +60,15 @@ cordcam(get camera actor location) --> |set as target| setactor{Set camera locat
 
 ```
 
-## Centerpoint Camera by Edgar Rikkert
+## Button to press by Nick van Luyk
 
-Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line.
+The button is an interactive actor designed to trigger a specified actor within the level. When a player steps on it, the button lowers and turns red, signaling that it has been pressed. Once activated, the designated actor—equipped with a blueprint interface—responds by executing its event. Selecting the target actor in the editor is simple: just choose the button and then click on the actor you want to link.
 
 ![GIF](Github-Media/LocalCo-opButton1.gif)
 
 ### class diagram voor game entities:
+
+
 
 ```mermaid
 classDiagram
