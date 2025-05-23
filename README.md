@@ -11,7 +11,7 @@ A complete and detailed description can be found in the functional design.(part 
 
 # Produced Game Parts
 
-Bas Klachid:
+Bas Klaichid:
   * Roomba(lvl 1)
   * animation flip book for 2D
   * logic of animation for 3D
@@ -33,7 +33,7 @@ Nick van Luyk:
   * 2D player movement
   * packaging
 
-## Roomba puzzle made by Bas Klachid
+## Roomba puzzle made by Bas Klaichid
 
 When the Roomba is activated by the appointed interactive actor, it initiates its timeline, moving toward a designated point before returning to its original location. As it follows its path, the Roomba's collider checks for objects in front of it. When it collides with paper wads, its collider gradually shrinks them down, reducing their size until they disappear entirely. Once the Roomba finishes its path, the collider that stops the 3D player is destroyed, allowing them to continue playing the level.
 
@@ -42,20 +42,20 @@ When the Roomba is activated by the appointed interactive actor, it initiates it
 
 
 
-## animation flip book for 2D made by Bas Klachid
+## animation flip book for 2D made by Bas Klaichid
 An Animation Flipbook in Unreal Engine is a 2D animation asset that plays a sequence of sprites (images) like a flipbook, creating the illusion of movement. It’s commonly used for 2D characters, effects (like explosions), or UI animations in Paper2D projects.
 ![pic](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/FlipBook_-_.gif)
 
-## logic of animation for 3D made by Bas Klachid
+## logic of animation for 3D made by Bas Klaichid
 This is the working logic for the 3D animation so that when the player jumps, runs, falls, and stand still the proper animation is played without wierd visual glitches
 ![pic](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/3Dbot.png)
 
-## logic of animation for 2D made by Bas Klachid
+## logic of animation for 2D made by Bas Klaichid
 This is the working logic for the 2D animation so that when the player jumps, runs, falls, and stand still the proper animation is played without wierd visual glitches and to make sure the sprite is able to move both ways.
 ![pic](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/2Dbot.png)
 
 
-## audio slider made by Bas Klachid
+## audio slider made by Bas Klaichid
 
 we used a widget blueprint and give the slider a value ammount that would be adjusted to the volume itself. This made it so that we can adjùst the volume either in the main menu or in our pause menu.
 
