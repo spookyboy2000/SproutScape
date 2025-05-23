@@ -174,3 +174,6 @@ The 2D player movement system is designed for responsive and intuitive control w
 
 - Built using Unreal Engine’s PaperZD with Blueprint scripting
 - Tuned gravity and friction settings for responsive movement
+
+### Example 2D Movement
+![GIF](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/Recording2025-05-23232034-ezgif.com-video-to-gif-converter.gif)
