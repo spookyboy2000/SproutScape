@@ -50,6 +50,7 @@ An Animation Flipbook in Unreal Engine is a 2D animation asset that plays a sequ
 
 ## logic of animation for 3D made by Bas Klaichid
 This is the working logic for the 3D animation so that when the player jumps, runs, falls, and stand still the proper animation is played without wierd visual glitches
+
 ![pic](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/3Dbot.png)
 
 ## logic of animation for 2D made by Bas Klaichid
