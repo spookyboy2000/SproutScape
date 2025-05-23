@@ -43,6 +43,7 @@ When the Roomba is activated by the appointed interactive actor, it initiates it
 
 
 ## animation flip book for 2D made by Bas Klaichid
+
 An Animation Flipbook in Unreal Engine is a 2D animation asset that plays a sequence of sprites (images) like a flipbook, creating the illusion of movement. It’s commonly used for 2D characters, effects (like explosions), or UI animations in Paper2D projects.
 ![pic](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/FlipBook_-_.gif)
 
@@ -57,7 +58,7 @@ This is the working logic for the 2D animation so that when the player jumps, ru
 
 ## audio slider made by Bas Klaichid
 
-we used a widget blueprint and give the slider a value ammount that would be adjusted to the volume itself. This made it so that we can adjùst the volume either in the main menu or in our pause menu.
+We used a widget blueprint and give the slider a value ammount that would be adjusted to the volume itself. This made it so that we can adjùst the volume either in the main menu or in our pause menu.
 
 
 ![pic](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/image.png)
@@ -95,7 +96,7 @@ cordcam(get camera actor location) --> |set as target| setactor{Set camera locat
 ```
 ## the washbot made by Edgar Rikkert
 
-if the button ontop the package box is pressed by the 3D player, the actor will finish it's animation in the paperFlipbook. After that the collider by the plate will appear which makes it so that the 2D player can move further throughout the level
+If the button ontop the package box is pressed by the 3D player, the actor will finish it's animation in the paperFlipbook. After that the collider by the plate will appear which makes it so that the 2D player can move further throughout the level
 
 ![pic](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/Washbot.png)
 
@@ -115,13 +116,13 @@ executeEvent(Blueprint executes event logic) --> eventcomplete{event completes a
 
 ## Interactable object to hold made by Edgar Rikkert
 
-The items to interact are made to highlight if a pawn gets into range of the collider. while it is highlighted the player can use the appropriate interaction, either having to hold the key down or simply having to press it once. After it is activated the hold to interact actor will light up red and be flipped to the other side to indicate that it has been activated.
+The Interactable object to hold is made to highlight if a pawn gets into range of the collider. while it is highlighted the player can use the appropriate interaction, hold the key down or simply having to press it once. After it is activated the hold to interact actor will light up red and be flipped to the other side to indicate that it has been activated.
 
 ![pic](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/HoldToInteract.gif)
 
 ## Interactable object made by Edgar Rikkert
 
-The Interactable object is made to highlight if a pawn gets into range of the collider. The normal interactable object works a bit different then the interactable object to hold. Simply Pressing it once will fire off the event for the actor that has the blueprint interface.
+The Interactable object is also made to highlight if a pawn gets into range of the collider. The normal interactable object works a bit different then the interactable object to hold. Simply Pressing it once will fire off the event for the actor that has the blueprint interface.
 
 ![pic](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/Roomba.gif)
 
