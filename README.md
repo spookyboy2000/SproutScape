@@ -13,7 +13,6 @@ A complete and detailed description can be found in the functional design.(part 
 
 Bas Klachid:
   * Roomba(lvl 1)
-  * Animation Blend spaces for 3D
   * animation flip book for 2D
   * logic of animation for 3D
   * logic of animation for 2D
@@ -41,20 +40,18 @@ When the Roomba is activated by the appointed interactive actor, it initiates it
 ![GIF](Github-Media/Roomba.gif)
 
 
-## Animation Blend spaces for 3D made by Bas Klachid
 
-![pic]()
 
 ## animation flip book for 2D made by Bas Klachid
-
+An Animation Flipbook in Unreal Engine is a 2D animation asset that plays a sequence of sprites (images) like a flipbook, creating the illusion of movement. It’s commonly used for 2D characters, effects (like explosions), or UI animations in Paper2D projects.
 ![pic]()
 
 ## logic of animation for 3D made by Bas Klachid
-
+This is the working logic for the 3D animation so that when the player jumps, runs, falls, and stand still the proper animation is played without wierd visual glitches
 ![pic]()
 
 ## logic of animation for 2D made by Bas Klachid
-
+This is the working logic for the 2D animation so that when the player jumps, runs, falls, and stand still the proper animation is played without wierd visual glitches and to make sure the sprite is able to move both ways.
 ![pic]()
 
 
