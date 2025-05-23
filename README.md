@@ -43,23 +43,12 @@ we used a widget blueprint and give the slider a value ammount that would be adj
 flowchart TD
 
 start((Player adjusts volume slider)) --> |the slider value changes between 0 - 100| Mixer(update audio mixer with new volume)
-
-Mixer(update audio mixer with new volume) --> |first this| setarm{target arm length}
-devide(devide both of them) --> setactor{Set camera location}
-multi(multiply by 2) --> |clamp inbetween a dintance of 100 and 5000| setarm{target arm length}
-Sequence(sequence) --> |then this| setactor{Set camera location}
-distance3D(get 3D player distance) --> multi(multiply by 2)
-distance2D(get 3D player distance) --> multi(multiply by 2)
-cordcam(get camera actor location) --> |set as target| setactor{Set camera location}
-
+Mixer(update audio mixer with new volume) --> |applies the changes to the game audio output| updateUI{Reflect Changes in UI & Save Settings}
 ```
+
 ## Animation Blend spaces for 3D made by Bas Klachid
 
-The Animation Blend Space works by taking two animations and creating a line between them which makes them smoothly go from one state to the other. this is a great addition for the character animation,
-because it safes alot of trouble and will make sure that you animations look clean and smooth
-without them looking rigid and stiff
-
-
+The Animation Blend Space works by seamlessly transitioning between two animations, creating a smooth Transition from one state to another. This feature is a valuable addition to character animation, as it eliminates much of the hassle involved in manual transitions. It ensures that animations look clean and fluid, preventing them from appearing rigid or unnatural.
 
 ## Centerpoint Camera by Edgar Rikkert
 
