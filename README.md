@@ -5,6 +5,11 @@ In deze repository vind je de informatie over het examen project.
 
 Omschrijf de examenopdracht evt de klant en wat het doel voor de klant is.
 Omschrijf ook beknopt wat het idee van je game is. 
+
+Linx Interactive is a company founded by Edwin van Gessel. The goal of Linx is to create games that are not only fun to play but also have a positive impact on players. They aim to build a community where people interact with each other in a respectful and friendly manner. The games are designed to evoke positive emotions, such as joy and friendship. It’s not just about the game itself, but also about how it brings players together and helps them connect with others in a meaningful way.
+
+The assignment is to create a local multiplayer game that centers on teamwork and positive emotions like friendship and pride. Players must support each other to progress—whether by reviving, healing, or solving puzzles together. Winning isn’t the focus; instead, the game is all about cooperation and mutual encouragement. Both players must always collaborate to move forward, fostering a strong sense of connection. To reinforce this, the game should reward their teamwork with positive feedback, making them feel proud of their shared achievements. Ultimately, the experience should emphasize connection, friendship, and the joy of building meaningful relationships.
+
 Een complete en uitgebreide beschrijving komt in het functioneel ontwerp (onderdeel van de [wiki](https://github.com/spookyboy2000/SproutScape/wiki))
 
 # Geproduceerde Game Onderdelen
@@ -14,50 +19,52 @@ Maak ook een overzicht van alle onderdelen met een link naar de map waarin deze 
 
 Bijv..
 
-Student X:
-  * [Wave System](https://github.com/erwinhenraat/VoorbeeldExamenRepo/tree/master/src/some)
-  * [Some other mechanic X](https://github.com/erwinhenraat/VoorbeeldExamenRepo/tree/master/src/mechanic_x)
-  * [Some other mechanic Y](https://github.com/erwinhenraat/VoorbeeldExamenRepo/tree/master/src/mechanic_y)
-Student Y:
-  * Water Shader
-  * [Some textured and rigged model](https://github.com/erwinhenraat/VoorbeeldExamenRepo/tree/master/assets/monsters)
+Bas Klachid:
+  * Roomba(lvl 1)
+  * Animation Blend spaces for 2D and 3D
+  * Collision for lvl 2
+Edgar Rikkert:
+  * Blueprint Interface for interaction
+  * Centerpoint Camera
+  * Washbot(lvl 1)
+  * item to Interact
 
-Student Z:
-  * [Some beautifull script](https://github.com/erwinhenraat/VoorbeeldExamenRepo/tree/master/src/beautifull)
-  * Some other Game object
+Nick van Luyk:
+  * Local Co-op
+  * Multiplayer
+  * Button to press
+  * Main menu
+  * 2D and 3D player movement
 
+## Centerpoint Camera by Edgar Rikkert
 
-## Wave System by Student X
+The Center-point camera  dynamically adjusts its position based on the locations of both players. The idea is to keep both players visible on the screen while maintaining a balanced view of the action.If the players move closer together, the camera can zoom in for a more detailed view. Conversely, if they spread apart, the camera zooms out to keep both in frame. The zoom level is often determined by the distance between the players. by letting this be funtion be fired on the Event Tick it ensures that the camera stays centered relative to both players.
 
-Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line.
+![GIF](Github-Media/CenterpointCamera.gif)
 
-![Animation](https://user-images.githubusercontent.com/1262745/217570184-90dc4701-d60d-4816-80d0-5007fdd3f6be.gif)
-
-### flowchart voor enemy wave system:
+### flowchart for the Centerpoint Camera
 ```mermaid
 flowchart TD
 
-start((Start)) -->|wait 10 seconds| spawn_w(spawn wave)
-spawn_w --> checken(check enemies in list)
-checken --> spawn_e(spawn enemies at once)
-spawn_e --> reached_base{enemy reached base?}
-reached_base -->|yes| lose_life(player loses a life)
-reached_base -->|no| money(player makes money)
-lose_life --> wave_done{wave done?}
-money --> wave_done
-wave_done -->|no| reached_base
-no_more_waves{no more waves?} -->|no more| more_lev(more levels?)
-wave_done -->|yes| no_more_waves
-no_more_waves -->|still waves| next_wave(goto next wave)
-next_wave --> start_wave
-start_wave --> spawn_w
-more_lev -->|yes, there's more| next_lev(start next level)
-more_lev -->|no more levels| end_d((end))
-next_lev --> start
-
-
+start((event Tick)) --> |if the ammount of players > 1| Sequence(sequence)
+cord3D(get 3D player location) -->| multiply with the other player location| devide(devide both of them)
+cord2D(get 2D player location) -->| multiply with the other player location| devide(devide both of them)
+Sequence(sequence) --> |first this| setarm{target arm length}
+devide(devide both of them) --> setactor{Set camera location}
+multi(multiply by 2) --> |clamp inbetween a dintance of 100 and 5000| setarm{target arm length}
+Sequence(sequence) --> |then this| setactor{Set camera location}
+distance3D(get 3D player distance) --> multi(multiply by 2)
+distance2D(get 3D player distance) --> multi(multiply by 2)
+cordcam(get camera actor location) --> |set as target| setactor{Set camera location}
 
 ```
+
+## Centerpoint Camera by Edgar Rikkert
+
+Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line.
+
+![GIF](Github-Media/LocalCo-opButton1.gif)
+
 ### class diagram voor game entities:
 
 ```mermaid
