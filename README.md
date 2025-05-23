@@ -37,22 +37,22 @@ Nick van Luyk:
 
 When the Roomba is activated by the appointed interactive actor, it initiates its timeline, moving toward a designated point before returning to its original location. As it follows its path, the Roomba's collider checks for objects in front of it. When it collides with paper wads, its collider gradually shrinks them down, reducing their size until they disappear entirely. Once the Roomba finishes its path, the collider that stops the 3D player is destroyed, allowing them to continue playing the level.
 
-![GIF](Github-Media/Roomba.gif)
+![GIF](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/Roomba.gif)
 
 
 
 
 ## animation flip book for 2D made by Bas Klachid
 An Animation Flipbook in Unreal Engine is a 2D animation asset that plays a sequence of sprites (images) like a flipbook, creating the illusion of movement. It’s commonly used for 2D characters, effects (like explosions), or UI animations in Paper2D projects.
-![pic]()
+![pic](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/FlipBook_-_.gif)
 
 ## logic of animation for 3D made by Bas Klachid
 This is the working logic for the 3D animation so that when the player jumps, runs, falls, and stand still the proper animation is played without wierd visual glitches
-![pic]()
+![pic](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/3Dbot.png)
 
 ## logic of animation for 2D made by Bas Klachid
 This is the working logic for the 2D animation so that when the player jumps, runs, falls, and stand still the proper animation is played without wierd visual glitches and to make sure the sprite is able to move both ways.
-![pic]()
+![pic](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/2Dbot.png)
 
 
 ## audio slider made by Bas Klachid
@@ -60,7 +60,7 @@ This is the working logic for the 2D animation so that when the player jumps, ru
 we used a widget blueprint and give the slider a value ammount that would be adjusted to the volume itself. This made it so that we can adjùst the volume either in the main menu or in our pause menu.
 
 
-![pic](Github-Media/image.png)
+![pic](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/image.png)
 
 ```mermaid
 flowchart TD
@@ -73,7 +73,7 @@ Mixer(update audio mixer with new volume) --> |applies the changes to the game a
 
 The Center-point camera  dynamically adjusts its position based on the locations of both players. The idea is to keep both players visible on the screen while maintaining a balanced view of the action.If the players move closer together, the camera can zoom in for a more detailed view. Conversely, if they spread apart, the camera zooms out to keep both in frame. The zoom level is often determined by the distance between the players. by letting this be funtion be fired on the Event Tick it ensures that the camera stays centered relative to both players.
 
-![GIF](Github-Media/CenterpointCamera.gif)
+![GIF](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/CenterpointCamera.gif)
 
 
 
@@ -97,7 +97,7 @@ cordcam(get camera actor location) --> |set as target| setactor{Set camera locat
 
 if the button ontop the package box is pressed by the 3D player, the actor will finish it's animation in the paperFlipbook. After that the collider by the plate will appear which makes it so that the 2D player can move further throughout the level
 
-![pic](Github-Media/Washbot.png)
+![pic](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/Washbot.png)
 
 ## Blueprint Interface for interaction made by Edgar Rikkert
 
@@ -117,17 +117,19 @@ executeEvent(Blueprint executes event logic) --> eventcomplete{event completes a
 
 The items to interact are made to highlight if a pawn gets into range of the collider. while it is highlighted the player can use the appropriate interaction, either having to hold the key down or simply having to press it once. After it is activated the hold to interact actor will light up red and be flipped to the other side to indicate that it has been activated.
 
-![pic](Github-Media/HoldToInteract.gif)
+![pic](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/HoldToInteract.gif)
 
 ## Interactable object made by Edgar Rikkert
 
 The Interactable object is made to highlight if a pawn gets into range of the collider. The normal interactable object works a bit different then the interactable object to hold. Simply Pressing it once will fire off the event for the actor that has the blueprint interface.
 
+![pic](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/Roomba.gif)
+
 ## Button to press by Nick van Luyk
 
 The button is an interactive actor designed to trigger a specified actor within the level. When a player steps on it, the button lowers and turns red, signaling that it has been pressed. Once activated, the designated actor—equipped with a blueprint interface—responds by executing its event. Selecting the target actor in the editor is simple: just choose the button and then click on the actor you want to link.
 
-![GIF](Github-Media/LocalCo-opButton1.gif)
+![GIF](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/LocalCo-opButton1.gif))
 
 ## Local Co-op made by Nick van Luyk
 
