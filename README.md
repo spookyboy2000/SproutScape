@@ -142,12 +142,34 @@ Local co-op in Unreal Engine 5 is built upon a combination of settings and syste
 
 ![Screenshot 2025-05-23 225424](https://github.com/user-attachments/assets/0672f332-2fa0-4250-b2e5-b0d5dafc05fa)
 
-## Main menu made by Nick van Luyk
+## 2D Player Movement – Implemented by Nick van Luyk
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-![example](https://user-images.githubusercontent.com/1262745/189135129-34d15823-0311-46b5-a041-f0bbfede9e78.png)
+The 2D player movement system is designed for responsive and intuitive control within a side-scrolling environment rendered in the background of the shared camera space. Movement is fully optimized for **controller (gamepad)** input.
 
-## 2D player movement made by Nick van Luyk
+### 🎮 Movement Overview
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-![example](https://user-images.githubusercontent.com/1262745/189135129-34d15823-0311-46b5-a041-f0bbfede9e78.png)
+- **Horizontal Movement**:  
+  Controlled via the **left analog stick** (left/right) or the **D-pad**. Movement uses velocity-based input for smooth transitions, supporting adjustable acceleration/deceleration curves.
+
+- **Jumping**:  
+  Activated with the **A button**. Includes:
+  - Variable jump height depending on how long the button is held
+  - Coyote time (a short grace period after leaving a ledge)
+  - Jump buffering (registers jump input slightly before landing)
+
+- **Interaction**:  
+  Performed with the **X button**, enabling the player to:
+  - Activate buttons/switches
+  - Pick up or throw items across dimensions
+  - Trigger co-op puzzle mechanics
+
+### 🧠 Design Goals
+
+- **Fluid Platforming**: Movement should feel responsive and snappy, with subtle mid-air control.
+- **Co-op Synergy**: Designed with the 3D player's space in mind, encouraging team-based problem-solving.
+- **Shared Camera Awareness**: Though positioned in the 2D background layer, the player remains visible from the shared camera with the 3D player.
+
+### 🛠️ Implementation Details
+
+- Built using Unreal Engine’s PaperZD with Blueprint scripting
+- Tuned gravity and friction settings for responsive movement
