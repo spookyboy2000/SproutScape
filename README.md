@@ -58,7 +58,7 @@ This is the working logic for the 2D animation so that when the player jumps, ru
 ![pic](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/2Dbot.png)
 
 ## 3D Movement
-I made the 3D movement 
+
 ![GIF](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/Roomba.gif)
 
 ## audio slider made by Bas Klaichid
