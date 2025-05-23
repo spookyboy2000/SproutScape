@@ -129,18 +129,18 @@ The Interactable object is made to highlight if a pawn gets into range of the co
 
 The button is an interactive actor designed to trigger a specified actor within the level. When a player steps on it, the button lowers and turns red, signaling that it has been pressed. Once activated, the designated actor—equipped with a blueprint interface—responds by executing its event. Selecting the target actor in the editor is simple: just choose the button and then click on the actor you want to link.
 
-![GIF](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/LocalCo-opButton1.gif))
+![GIF](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/SproutScapeButtonGif-ezgif.com-video-to-gif-converter.gif)
+![ButtonSettings](https://github.com/user-attachments/assets/15a38fd6-e04c-4de0-8828-22b75c737aa6)
 
 ## Local Co-op made by Nick van Luyk
 
 Local co-op in Unreal Engine 5 is built upon a combination of settings and systems that seamlessly integrate to create a cohesive multiplayer experience. To enable local co-op for two players, several steps need to be configured within the game. First we increased the number of players to two within the game mode settings. Next, two Player Start actors should be placed at the beginning of the map to define individual spawn points for each player. In the game mode blueprint, the Create Player node must be used twice to actually be able to use the additional player. Once the players are created, distinct input mappings should be assigned to their corresponding pawns. This ensures that each player has independent control over their character using separate gamepads.
 
-![example](https://user-images.githubusercontent.com/1262745/189135129-34d15823-0311-46b5-a041-f0bbfede9e78.png)
+![GIF](https://github.com/spookyboy2000/SproutScape/blob/master/Github-Media/Recording2025-05-23225646-ezgif.com-video-to-gif-converter.gif)
 
-## Multiplayer spaces made by Nick van Luyk
+![Screenshot 2025-05-23 230106](https://github.com/user-attachments/assets/17df18fc-f357-47a1-ba20-291a46cf2684)
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-![example](https://user-images.githubusercontent.com/1262745/189135129-34d15823-0311-46b5-a041-f0bbfede9e78.png)
+![Screenshot 2025-05-23 225424](https://github.com/user-attachments/assets/0672f332-2fa0-4250-b2e5-b0d5dafc05fa)
 
 ## Main menu made by Nick van Luyk
 
